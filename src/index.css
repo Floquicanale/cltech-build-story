@@ -17,11 +17,11 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 27%;
 
-    /* Construction blue theme */
-    --primary: 212 84% 34%;
+    /* Navy blue theme */
+    --primary: 220 90% 20%;
     --primary-foreground: 0 0% 98%;
-    --primary-dark: 212 90% 25%;
-    --primary-light: 212 70% 45%;
+    --primary-dark: 220 95% 15%;
+    --primary-light: 220 80% 30%;
 
     --secondary: 210 15% 91%;
     --secondary-foreground: 215 25% 27%;
@@ -29,10 +29,10 @@ All colors MUST be HSL.
     --muted: 210 15% 96%;
     --muted-foreground: 215 16% 47%;
 
-    /* Construction orange accent */
-    --accent: 25 95% 53%;
+    /* Blue-grey accent */
+    --accent: 210 50% 60%;
     --accent-foreground: 0 0% 98%;
-    --accent-light: 25 90% 60%;
+    --accent-light: 210 45% 70%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
