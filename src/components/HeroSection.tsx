@@ -41,7 +41,7 @@ const HeroSection = () => {
       <div className="relative z-10 h-full flex items-center justify-center">
         <div className="text-center text-white max-w-4xl mx-auto px-4">
           <motion.h1 
-            className="text-5xl md:text-7xl font-bold mb-6"
+            className="text-4xl md:text-7xl font-bold mb-6"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -55,7 +55,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Construimos confianza, entregamos soluciones.
+            Construyendo el futuro de la Patagonia.
           </motion.h2>
           
           <motion.div 
@@ -64,10 +64,17 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <p className="text-lg md:text-xl leading-relaxed mb-8">
+            <p className="hidden md:block text-l leading-relaxed mb-8">
               Con más de dos décadas de experiencia en el sector de la construcción, 
-              CLTECH S.A. se ha consolidado como una empresa líder en obras civiles e industriales, 
-              ofreciendo soluciones integrales con la más alta calidad y compromiso.
+              CLTECH S.A. se ha consolidado como una empresa líder en obras civiles,  
+              comerciales, industriales y de infraestructura en la Patagonia Argentina.
+              Ofrecemos soluciones integrales con la más alta calidad y compromiso.
+            </p>
+
+            <p className="text-m md:hidden leading-relaxed mb-8">
+              Con más de 20 años de experiencia en el sector de la construcción, 
+              CLTECH S.A. se ha consolidado como una empresa líder en obras civiles,  
+              comerciales e industriales.
             </p>
             
             <motion.button 
@@ -82,21 +89,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <motion.div 
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1 }}
-      >
-        <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-          <motion.div 
-            className="w-1 h-3 bg-white rounded-full mt-2"
-            animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-          />
-        </div>
-      </motion.div>
     </section>
   );
 };

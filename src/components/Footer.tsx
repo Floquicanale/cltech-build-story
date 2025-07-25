@@ -56,15 +56,15 @@ const Footer = () => {
             <div className="space-y-3 text-primary-foreground/80">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-accent" />
-                <span>+54 2972 123-456</span>
+                <span>+54 2944 242685</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-accent" />
-                <span>info@cltech-sa.com</span>
+                <span>info@cltech.com.ar</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 text-accent mt-1" />
-                <span>Av. San Martín 1234<br />San Martín de los Andes, Neuquén</span>
+                <span>Amancay 89<br />San Martín de los Andes, Neuquén</span>
               </div>
             </div>
           </motion.div>
@@ -77,10 +77,10 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-lg font-semibold text-accent">Síguenos</h4>
+            <h4 className="text-lg font-semibold text-accent">Seguinos</h4>
             <div className="flex space-x-4">
               <a
-                href="https://instagram.com/cltech_sa"
+                href="https://instagram.com/clte_c"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 hover:bg-accent p-3 rounded-full transition-all duration-300 hover:scale-110"
@@ -90,8 +90,7 @@ const Footer = () => {
             </div>
             
             <div className="pt-4 space-y-2 text-sm text-primary-foreground/60">
-              <p>CUIT: 30-12345678-9</p>
-              <p>Matrícula Profesional: MP-001</p>
+              <p>CUIT: 30-71514733-1</p>
             </div>
           </motion.div>
         </div>

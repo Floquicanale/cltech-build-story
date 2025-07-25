@@ -13,7 +13,7 @@ import { useEffect } from 'react';
 const ContactSection = () => {
   const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation();
   const { ref: contactRef, isVisible: contactVisible } = useScrollAnimation();
-  const [state, handleSubmit] = useForm("xovqkayb"); // Replace with your Formspree form ID
+  const [state, handleSubmit] = useForm("mdkdggrv"); 
   const { toast } = useToast();
 
   useEffect(() => {
@@ -29,13 +29,13 @@ const ContactSection = () => {
     {
       icon: Phone,
       title: "Teléfono",
-      content: "+54 2972 123-456",
-      link: "tel:+542972123456"
+      content: "+54 2944 242-685",
+      link: "tel:+542944242685"
     },
     {
       icon: MapPin,
       title: "Dirección",
-      content: "Av. San Martín 1234, San Martín de los Andes, Neuquén",
+      content: "Amancay 89, San Martín de los Andes, Neuquén",
       link: "https://maps.google.com/?q=San+Martin+de+los+Andes"
     },
     {
@@ -47,8 +47,8 @@ const ContactSection = () => {
     {
       icon: Instagram,
       title: "Instagram",
-      content: "@cltech_sa",
-      link: "https://instagram.com/cltech_sa"
+      content: "@clte_c",
+      link: "https://instagram.com/clte_c"
     }
   ];
 
@@ -67,8 +67,8 @@ const ContactSection = () => {
             Contacto
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            ¿Tienes un proyecto en mente? Nos encantaría conocer los detalles 
-            y ayudarte a convertir tus ideas en realidad.
+            ¿Tenés un proyecto en mente? Nos encantaría conocer los detalles 
+            y ayudarte a volverlo realidad.
           </p>
         </motion.div>
 

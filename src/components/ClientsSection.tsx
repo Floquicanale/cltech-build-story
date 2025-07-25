@@ -2,9 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import clientCooperativa from '@/assets/client-cooperativa-obrera.jpg';
-import clientYPF from '@/assets/client-ypf.jpg';
-import clientMotomecanica from '@/assets/client-motomecanica.jpg';
-import clientNeuform from '@/assets/client-neuform.jpg';
+import clientYPF from '@/assets/client-ypf.png';
+import clientHSBC from '@/assets/client-hsbc.png';
+import clientMacro from '@/assets/client-macro.png';
 
 const ClientsSection = () => {
   const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation();
@@ -14,22 +14,22 @@ const ClientsSection = () => {
     {
       name: "Cooperativa Obrera",
       logo: clientCooperativa,
-      description: "Líder en servicios y productos de consumo masivo"
+      description: "Líder en servicios y productos de consumo masivo."
     },
     {
       name: "YPF",
       logo: clientYPF,
-      description: "Empresa energética argentina"
+      description: "Empresa argentina de energía dedicada a la explotación, destilación, distribución y venta de derivados de hidrocarburos."
     },
     {
-      name: "Motomecánica",
-      logo: clientMotomecanica,
-      description: "Especialistas en ingeniería mecánica"
+      name: "HSBC",
+      logo: clientHSBC,
+      description: "Empresa multinacional británica de banca y servicios financieros."
     },
     {
-      name: "Neuform",
-      logo: clientNeuform,
-      description: "Innovación en materiales de construcción"
+      name: "Macro",
+      logo: clientMacro,
+      description: "Banco de capitales privados argentinos."
     }
   ];
 
@@ -45,10 +45,10 @@ const ClientsSection = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Clientes y Alianzas
+            Clientes que confían en nosotros
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Trabajamos junto a empresas líderes que confían en nuestra experiencia 
+            Trabajamos junto a empresas líderes que confiaron en nuestra experiencia 
             y capacidad para ejecutar proyectos de alta complejidad.
           </p>
         </motion.div>
@@ -93,40 +93,6 @@ const ClientsSection = () => {
               </div>
             </motion.div>
           ))}
-        </motion.div>
-
-        {/* Partnership Message */}
-        <motion.div 
-          className="text-center mt-16 p-8 bg-card rounded-2xl shadow-card"
-          initial={{ opacity: 0, y: 30 }}
-          animate={clientsVisible ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          <h3 className="text-2xl font-bold text-primary mb-4">
-            Construyendo Alianzas Estratégicas
-          </h3>
-          <p className="text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-            Nuestras alianzas estratégicas nos permiten ofrecer soluciones integrales 
-            y de última generación. Trabajamos en conjunto con los mejores proveedores 
-            y profesionales del sector para garantizar la excelencia en cada proyecto.
-          </p>
-          
-          <motion.div 
-            className="mt-8 flex flex-wrap justify-center gap-4"
-            initial={{ opacity: 0 }}
-            animate={clientsVisible ? { opacity: 1 } : {}}
-            transition={{ duration: 0.6, delay: 0.6 }}
-          >
-            <div className="bg-primary/10 px-4 py-2 rounded-full">
-              <span className="text-primary font-medium">+50 Proyectos Completados</span>
-            </div>
-            <div className="bg-accent/10 px-4 py-2 rounded-full">
-              <span className="text-accent font-medium">20+ Años de Experiencia</span>
-            </div>
-            <div className="bg-construction-steel/20 px-4 py-2 rounded-full">
-              <span className="text-construction-steel font-medium">Confianza Empresarial</span>
-            </div>
-          </motion.div>
         </motion.div>
       </div>
     </section>

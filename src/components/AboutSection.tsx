@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import founderImage from '@/assets/founder-omar-canale.jpg';
+import founderImage from '@/assets/tony-de-tragedia.jpg';
 import { Target, Eye, Users, Award } from 'lucide-react';
 
 const AboutSection = () => {
@@ -14,17 +14,17 @@ const AboutSection = () => {
     {
       icon: Target,
       title: "Misión",
-      description: "Brindar soluciones constructivas integrales con la más alta calidad, cumpliendo plazos y superando expectativas de nuestros clientes."
+      description: "Proveer soluciones constructivas de alta eficiencia para la industria y la energía, adaptadas a entornos críticos y exigencias operativas del sector."
     },
     {
       icon: Eye,
       title: "Visión", 
-      description: "Ser la empresa de construcción de referencia en la región patagónica, reconocida por nuestra excelencia técnica e innovación."
+      description: "Ser un socio estratégico de las principales empresas de energía e industria en la Patagonia, destacándonos por nuestra confiabilidad, versatilidad y compromiso con los resultados."
     },
     {
       icon: Award,
       title: "Valores",
-      description: "Compromiso, calidad, transparencia, seguridad y responsabilidad ambiental en cada proyecto que emprendemos."
+      description: "Compromiso, calidad, transparencia, flexibilidad, trabajo en equipo, seguridad y sustentabilidad en cada proyecto que emprendemos."
     }
   ];
 
@@ -43,9 +43,9 @@ const AboutSection = () => {
             Nuestra Historia
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Desde nuestros inicios, CLTECH S.A. ha mantenido un compromiso inquebrantable 
-            con la excelencia en construcción, evolucionando constantemente para ofrecer 
-            las mejores soluciones del mercado.
+          Somos una empresa constructora con más de 20 años de experiencia en la ejecución de obras civiles, industriales y logísticas en la Patagonia. 
+          Poseemos trayectoria comprobada en construcción para el sector oil & gas, logístico-operativo y comercial, incluyendo bases operativas, naves industriales, talleres, playas de maniobras, edificios técnicos y espacios administrativos.
+          Desde 2014 operamos como sociedad anónima, incorporando tecnología, procesos integrados de gestión y un enfoque riguroso en calidad, seguridad y cumplimiento de plazos.
           </p>
         </motion.div>
 
@@ -66,14 +66,14 @@ const AboutSection = () => {
               Ing. Omar Canale - Fundador
             </h3>
             <blockquote className="text-xl italic text-construction-steel mb-4 border-l-4 border-accent pl-6">
-              "La construcción no es solo levantar estructuras, es crear espacios 
-              donde las personas viven, trabajan y crecen. Cada proyecto es una 
-              oportunidad de contribuir al progreso de nuestra comunidad."
+              "En un mundo donde las condiciones cambian constantemente, hay que saber adaptarse y seguir adelante."
             </blockquote>
             <p className="text-muted-foreground leading-relaxed">
-              Con más de 25 años de experiencia en ingeniería civil, el Ing. Omar Canale 
+              Con más de 30 años de experiencia en ingeniería civil, el Ing. Omar Canale 
               fundó CLTECH S.A. con la visión de crear una empresa que combine 
-              experiencia técnica, innovación y un profundo compromiso con la calidad.
+              experiencia técnica, innovación y un profundo compromiso con la calidad. 
+              Actualmente es el responsable de la supervisión general, cumplimiento 
+              normativo y vinculación técnica con entes contratantes.
             </p>
           </motion.div>
 
@@ -87,9 +87,9 @@ const AboutSection = () => {
               <img 
                 src={founderImage} 
                 alt="Ing. Omar Canale - Fundador de CLTECH S.A."
-                className="w-full h-96 object-cover"
+                className="w-full max-w-md object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent max-w-md " />
             </div>
           </motion.div>
         </motion.div>
@@ -139,9 +139,14 @@ const AboutSection = () => {
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed">
               Contamos con un equipo multidisciplinario de profesionales altamente calificados: 
-              ingenieros civiles, arquitectos, maestros mayores de obras, técnicos especializados 
-              y operarios experimentados. Cada miembro de nuestro equipo comparte el compromiso 
-              con la excelencia y la innovación que caracteriza a CLTECH S.A.
+              ingenieros civiles y electromecánicos, arquitectos, maestros mayores de obra, capataces/jefes de obra 
+              con amplia experiencia en campo y mano de obra calificada para tareas de albañilería, 
+              estructura, instalaciones y terminaciones. Cada miembro de nuestro equipo comparte el compromiso 
+              con la excelencia y la innovación que caracteriza a CLTECH S.A.</p>
+
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Trabajamos con una red consolidada de profesionales asociados y subcontratistas especializados 
+              para escalar recursos según los requerimientos de cada obra.
             </p>
           </div>
         </motion.div>

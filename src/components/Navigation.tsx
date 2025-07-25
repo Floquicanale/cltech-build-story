@@ -1,10 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import LogoNormal from '@/assets/logo-cltech.png'
+import LogoWhite from '@/assets/logo-cltech-blanco.png'
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isOnHero, setIsOnHero] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const heroSection = document.getElementById("hero");
+      if (heroSection) {
+        const rect = heroSection.getBoundingClientRect();
+        setIsOnHero(rect.bottom > 80); 
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -57,7 +72,11 @@ const Navigation = () => {
                   isScrolled ? 'text-primary' : 'text-white'
                 }`}
               >
-                CLTECH S.A.
+              <img
+                src={isOnHero ? LogoWhite : LogoNormal}
+                alt="Logo de cltech"
+                className="w-16 h-16 md:w-24 md:h-24 object-contain"
+              />
               </button>
             </motion.div>
 

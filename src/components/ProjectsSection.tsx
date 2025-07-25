@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import project1 from '@/assets/project-1.jpg';
-import project2 from '@/assets/project-2.jpg';
-import project3 from '@/assets/project-3.jpg';
-import project4 from '@/assets/project-4.jpg';
+import project1 from '@/assets/base-operativa-tuboscope.png';
+import project2 from '@/assets/tenaris-siderca.png';
+import project4 from '@/assets/gimnasio-idf.jpg';
+import project3 from '@/assets/banco_macro.png';
+import project5 from '@/assets/hsbc.png'
 
 const ProjectsSection = () => {
   const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation();
@@ -16,32 +17,45 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "Complejo Corporativo San Martín",
-      description: "Edificio de oficinas de 8 pisos con fachada de vidrio y estructura de acero. Superficie: 3,200 m². Incluye estacionamiento subterráneo y sistemas de eficiencia energética.",
+      title: "Base Operativa Tuboscope",
+      place: "Añelo, Neuquén",
+      description: "Ejecución de infraestructura operativa para empresa del sector oil & gas. Incluyó oficinas, galpones, servicios sanitarios y accesos.",
       image: project1,
-      category: "Obra Civil"
+      category: "Obra Industrial"
     },
     {
       id: 2,
-      title: "Centro Logístico Industrial",
-      description: "Nave industrial de 5,000 m² con altura de 12 metros. Incluye oficinas administrativas, sistema contra incendios y tecnología de automatización para depósito.",
+      title: "Nave Industrial – Tenaris ",
+      place: "Neuquén Capital",
+      description: "Construcción de nave técnica para operaciones de logística y servicios industriales. Incluyó estructura metálica, pisos industriales, cerramientos, oficinas operativas y sistema de iluminación LED de alto rendimiento.",
       image: project2,
       category: "Obra Industrial"
     },
     {
       id: 3,
-      title: "Complejo Residencial Los Andes",
-      description: "Desarrollo residencial de 45 unidades en 3 edificios. Incluye áreas verdes, quincho comunitario y sistema de seguridad integral.",
+      title: "Sucursal Banco Macro",
+      place: "San Martín de los Andes",
+      description: "Construcción integral de un complejo comercial de planta baja, y dos pisos, que incluye locales de atención, oficinas, sanitarios, instalaciones completas y accesos.",
       image: project3,
-      category: "Obra Civil"
+      category: "Obra Civil?"
     },
     {
       id: 4,
-      title: "Ampliación Hospital Regional",
-      description: "Refacción y ampliación de 2,800 m² incluyendo nueva ala de emergencias, quirófanos y sistemas de aire acondicionado hospitalario.",
+      title: "Gimnasio IDF12 ",
+      place: "Neuquén",
+      description: "Construcción de gimnasio de uso público, con estructura metálica, salas de entrenamiento, oficinas administrativas, sanitarios, vestuarios y sistema de climatización.",
       image: project4,
+      category: "Obra Civil"
+    },
+    {
+      id: 5,
+      title: "Sucursal Banco HSBC",
+      place: "Neuquén Capital",
+      description: "Remodelación integral de oficinas comerciales y áreas técnicas, con estrictos requerimientos de seguridad, calidad de terminaciones y cumplimiento de normativa bancaria.",
+      image: project5,
       category: "Refacción"
     }
+    
   ];
 
   const nextProject = () => {
@@ -67,8 +81,8 @@ const ProjectsSection = () => {
             Obras Realizadas
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Cada proyecto representa nuestro compromiso con la excelencia y la innovación. 
-            Descubre algunas de nuestras obras más destacadas.
+            Cada proyecto representa nuestro compromiso con la excelencia. 
+            Descubrí algunas de nuestras obras más destacadas.
           </p>
         </motion.div>
 
@@ -122,6 +136,9 @@ const ProjectsSection = () => {
                       <h3 className="text-2xl md:text-3xl font-bold mb-4">
                         {projects[currentProject].title}
                       </h3>
+                      <h2 className="text-m md:text-l font-bold mb-4">
+                        {projects[currentProject].place}
+                      </h2>
                       <AnimatePresence>
                         {hoveredProject === currentProject && (
                           <motion.p
